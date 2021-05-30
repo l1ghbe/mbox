@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Gulp Project</title>
+        <link
+            rel="stylesheet"
+            href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+            integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+            crossorigin="anonymous"
+        />
+        <link
+            rel="stylesheet"
+            href="https://unpkg.com/swiper/swiper-bundle.min.css"
+        />
+        <link rel="stylesheet" href="css/style.min.css" />
+    </head>
+    <body>
+        <div class="wrapper">
+            <header id="header" class="header">
+                <div class="header__row">
+                    <a href="#" class="logo"
+                        ><img src="./img/logo.svg" alt="logo"
+                    /></a>
+                    
+                    <nav class="navigation-site">
+                        <ul class="header__menu">
+                            <li class="header__menu-item">
+                                <a href="#home" id="homeId" class="header__menu-link"
+                                    >Home</a
+                                >
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#tvShows" id="tvId" class="header__menu-link"
+                                    >TV Shows</a
+                                >
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#movies" id="moviesId" class="header__menu-link">Movies</a>
+                            </li>
+                            <li class="header__menu-item">
+                                <a href="#genres" id="genreId" class="header__menu-link">Genres</a>
+                            </li>
+                        </ul>
+                    </nav>
+                    <nav class="navigation-user">
+                        <ul class="navigation__list">
+                            <li class="navigation__list-item">
+                                <div class="search-bar navigation__list-link">
+                                    <input type="text" placeholder="Search" class="search-input">
+                                    <a href="#" class="search-btn navigation__list-link">
+                                        <img src="./img/search.svg" class="icon icon-search" alt="">
+                                    </a>
+                                </div>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="#" id="notifications" class="navigation__list-link">
+                                    <img src="./img/notification.svg" class="icon icon-notification" alt="">
+                                </a>
+                            </li>
+                            <li class="navigation__list-item">
+                                <a href="#" class="navigation__list-link">
+                                    <img src="./img/login.svg" class="icon icon-login" alt="">
+                                </a>
+                            </li>
+                        </ul>
+                        <div class="notification-drop">
+                            <h3 class="notification-drop-text">Have a nice day =)</h3>
+                            <div class="drop-line"></div>
+                        </div>
+
+                    </nav>
+                    <div class="menu">
+                        <a href="#" class="menu__btn">
+                            <span></span>
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <section id="home" class="main">
+                <img src="./img/mainbg.jpg" class="background-main" alt="" />
+                <div class="main-content">
+                    <h3 class="main-title">Mr. Robot</h3>
+                    <div class="main__description">
+                        <div class="main__description-item">
+                            <h6
+                                class="main__description-about main__description-year"
+                            >
+                                2021
+                            </h6>
+                            <div
+                                class="main__description-about main__description-restriction"
+                            >
+                                <span>18+</span>
+                            </div>
+                            <h5
+                                class="main__description-about main__description-seasons"
+                            >
+                                4 seasons
+                            </h5>
+                            <div
+                                class="main__description-about main__description-rating"
+                            >
+                                <img src="./img/star.svg" alt="star" />
+                                <span>7.6</span>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="main__description-text">
+                        Elliot, a cyber-security engineer suffering from anxiety, works for a corporation and hacks felons by night. Panic strikes him after Mr Robot, a cryptic anarchist, recruits him to ruin his company.
+                    </p>
+                    <div class="buttons">
+                        <a href="#" class="btn button-watch"
+                            ><img src="./img/player.svg" alt="Play button" />
+                            <span>Watch</span></a
+                        >
+                        <a href="#" class="btn button-more">More information</a>
+                    </div>
+                    
+                </div>
+            </section>
+            <div class="trailer">
+                <video src="./img/video/mrrobot.mp4" controls="true" class="trailer-video"></video>
+                <img src="./img/video/close.png" class="trailer-close" alt="Close button">
+            </div>
+            <div class="popup">
+                <div class="popup-content">
+                    <h3 class="popup-text">Well, actually this movie is not real</h3>
+                    
+                </div>
+                <a href="#" class="popup-back">
+                    <span></span>
+                    <span></span>
+                </a>
+            </div>
+
+            <div class="line"></div>
+
+            <div id="tvShows" class="trendtv">
+                <div class="trendtv__row">
+                    <div class="fraction-title trendtv-title">
+                        <div class="trendtv__show-bar"></div>
+                        <a href="#" class="trendtv__row-title">
+                            Trending TV Shows
+                            <i class="fas fa-chevron-right btn-icon"></i>
+                        </a>
+                    </div>
+                    <div class="trendtv-shows swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/1-9.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/2.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/3.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/4.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/5.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendtv/6.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="movies" class="movies">
+                <div class="trendtv__row">
+                    <div class="fraction-title">
+                        <div class="trendtv__show-bar"></div>
+                        <a href="#" class="fraction__row-title">
+                            Trending Movies
+                            <i class="fas fa-chevron-right btn-icon"></i>
+                        </a>
+                    </div>
+                    <div class="trendtv-shows movies-shows swiper-container">
+                        <div class="swiper-wrapper">
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/1.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/2.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/3.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/4.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/5.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                            <div class="trendtv__show movies__show swiper-slide">
+                                <a href="#" class="trendtv__show-item">
+                                    <img src="./img/trendmovies/6.jpg" alt="TV Show" />
+                                </a>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <a href="#" id="seeMore" class="btn button-watch">See more</a>
+
+            <div id="genres" class="genres">
+                <div class="container">
+                    <div class="genres__rows">
+                        <div class="fraction-title">
+                            <div
+                                class="fraction__show-bar genre__show-bar"
+                            ></div>
+                            <a
+                                href="#"
+                                class="fraction__row-title genre__row-title"
+                            >
+                                Popular Genres
+                                <i class="fas fa-chevron-right btn-icon"></i>
+                            </a>
+                        </div>
+                        <div class="genres__row">
+                            <a href="#" class="genre-card card-romance">
+                                <img src="./img/hearts.svg" alt="Romance" />
+                                <h4 class="genre-text">Romance</h4>
+                            </a>
+                            <a href="#" class="genre-card carde-drama">
+                                <img src="./img/drama.svg" alt="Drama" />
+                                <h4 class="genre-text">Drama</h4>
+                            </a>
+                            <a href="#" class="genre-card card-history">
+                                <img src="./img/history.svg" alt="Historical" />
+                                <h4 class="genre-text">Historical</h4>
+                            </a>
+                            <a href="#" class="genre-card card-action">
+                                <img src="./img/action.svg" alt="Action" />
+                                <h4 class="genre-text">Action</h4>
+                            </a>
+                            <a href="#" class="genre-card carde-scifi">
+                                <img src="./img/rocket.svg" alt="Sci-fi" />
+                                <h4 class="genre-text">Sci-fi</h4>
+                            </a>
+                            <a href="#" class="genre-card card-horror">
+                                <img src="./img/ghost.svg" alt="Horror" />
+                                <h4 class="genre-text">Horror</h4>
+                            </a>
+                            <a href="#" class="genre-card carde-comedy">
+                                <img src="./img/comedy.svg" alt="Comedy" />
+                                <h4 class="genre-text">Comedy</h4>
+                            </a>
+                            <a href="#" class="genre-card card-documentary">
+                                <img src="./img/documentary.svg" alt="Documentary" />
+                                <h4 class="genre-text">Documentary</h4>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="actors" class="actors">
+                <div class="container">
+                    <div class="fraction-title">
+                        <div class="fraction__show-bar"></div>
+                        <a href="#" class="fraction__row-title">
+                            Popular Actors & Directors
+                            <i class="fas fa-chevron-right btn-icon"></i>
+                        </a>
+                    </div>
+                    <div class="actors__rows swiper-container">
+                        <div class="actors__slider swiper-wrapper">
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/sb.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">Samantha Bowen</h4>
+                            </div>
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/rb.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">Rhys Birch</h4>
+                            </div>
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/jh.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">James Holloway</h4>
+                            </div>
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/jw.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">Joshua Walton</h4>
+                            </div>
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/pe.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">Patrick Elliott</h4>
+                            </div>
+                            
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/ee.png" alt=""
+                                /></a>
+                                <h4 class="actor-name">Ester Exposito</h4>
+                            </div>
+                            <div class="actors__slide swiper-slide">
+                                <a href="#" class="actor"
+                                    ><img src="./img/artists/ld.jpg" alt=""
+                                /></a>
+                                <h4 class="actor-name">Leonardo DiCaprio</h4>
+                            </div>
+                        </div>
+                        <div class="swiper-button-prev"></div>
+                        <div class="swiper-button-next"></div>
+                    </div>
+                </div>
+            </div>
+
+            <div id="premier" class="premier">
+                <div class="container">
+                    <div class="premier__rows">
+                        <img src="./img/bbb.jpg" class="bbb" alt="" />
+                        <div class="premier__row">
+                            <img src="./img/2021.png" alt="" />
+                            <h3 class="premier__row-text">Coming soon...</h3>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="banner-reg">
+                <h2 class="banner-text">
+                    Are You New Here ? <br /> Don’t wait, Register Now.
+                </h2>
+                <a href="#" class="btn button-watch button-register">Register now</a>
+            </div>
+
+            <footer id="footer" class="footer">
+                <div class="footer__rows">
+                    <div class="footer-row">
+                        <a href="#" class="logo footer-logo"><img src="./img/Logo.svg" alt="" class="logo" /></a>
+                        <div class="footer-socials">
+                            <a href="#" class="footer__social-link"><img src="./img/socials/fb.svg" alt="" /></a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/socials/twitter.svg" alt="" />
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/socials/li.svg" alt="" />
+                            </a>
+                            <a href="#" class="footer__social-link">
+                                <img src="./img/socials/insta.svg" alt="" />
+                            </a>
+                        </div>
+                    </div>
+                    <div class="footer-row">
+                        <ul class="footer__row-menu">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Voice over and Subtitle</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Media Center </a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Privacy</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Contact us</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <ul class="footer__row-menu">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Voice Description</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Investor Relations</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Legal Provisions</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <ul class="footer__row-menu">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Help Center</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Job Opportunities</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Cookies Preferences</a>
+                            </li>
+                        </ul>
+                    </div>
+                    <div class="footer-row">
+                        <ul class="footer__row-menu">
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Gift Cards</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Terms of Use</a>
+                            </li>
+                            <li class="footer__menu-item">
+                                <a href="#" class="footer__menu-link">Corporate Informations</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </footer>
+        </div>
+        <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+        <script src="js/script.min.js"></script>
+    </body>
+</html>

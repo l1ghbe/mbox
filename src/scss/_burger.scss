@@ -1,0 +1,136 @@
+.menu {
+    position: relative;
+    display: none;
+    outline: none;
+    // display: flex;
+    // justify-content: center;
+    // align-items: center;
+}
+
+.menu__btn {
+    display: none;
+    width: 50px;
+    height: 50px;
+    background-image: linear-gradient(316.53deg, #26fff2 13.2%, #326cff 71.54%);
+    border-radius: 50%;
+    position: relative;
+
+    /* box-shadow: 0px 0px 15px #fff; */
+}
+.menu__btn span,
+.menu__btn span::before,
+.menu__btn span::after {
+    position: absolute;
+    width: 20px;
+    height: 2px;
+    top: 50%;
+    margin-top: -1px;
+    left: 50%;
+    margin-left: -10px;
+    background-color: #fff;
+    transition: 0.5s;
+}
+.menu__btn span::before,
+.menu__btn span::after {
+    content: "";
+}
+.menu__btn span::before {
+    transform: translateY(-5px);
+}
+.menu__btn span::after {
+    transform: translateY(5px);
+}
+
+
+
+.menu__btn {
+    display: block;
+    outline: none;
+}
+
+.menu__btn.active span::before {
+    transform: rotate(45deg);
+    width: 20px;
+    transform-origin: center;
+}
+.menu__btn.active span::after {
+    transform: rotate(-45deg);
+    width: 20px;
+    transform-origin: center;
+}
+.menu__btn.active span:first-child {
+    background-color: transparent;
+}
+
+
+.navigation-site.active {
+    transition: .6s;
+    display: flex;
+    flex-direction: column;
+
+}
+.navigation-user.active {
+    transform: translateX(0px);
+    transition: .6s;
+    opacity: 0.7;
+    display: block;
+    position: absolute;
+    bottom: -10;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    
+}
+.navigation-user.active .navigation__list{
+    // position: relative;
+    display: flex;
+    // flex-direction: column;
+    align-items: flex-end;
+    justify-content: space-evenly;
+    width: 100%;
+    height: 100%;
+}
+.navigation-user.active .navigation__list .navigation__list-item{
+    margin-left: 0;
+    margin-right: 0px;
+}
+
+.navigation-user.active input {
+    top: 205%;
+    right: -500%;
+    transform-origin: center;
+    transform: scale(1);
+}
+
+
+
+.navigation-site.active {
+    transition: .5s ease-out;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    opacity: 0.9;
+    background-color: #000;
+    transform: translateY(0px);
+
+}
+.navigation-site.active .header__menu {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.navigation-site.active .header__menu .header__menu-item{
+    margin-right: 0;
+    margin-bottom: 65px;
+    
+}
+
+.navigation-site.active .header__menu .header__menu-item .header__menu-link {
+    font-size: 21px;
+}
