@@ -139,8 +139,12 @@ trailerBtn.addEventListener('click', () => {
 
 buttonMore.addEventListener('click', () => {
   popup.classList.add('active')
+  
 })
-popupBack.addEventListener('click', () => {
+
+
+popupBack.addEventListener('click', (e) => {
+  e.preventDefault()
   popup.classList.remove('active')
 })
 
